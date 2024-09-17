@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search Portal</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Find Your Dream Job</h1>
+        <div class="search-bar">
+            <input type="text" id="jobSearch" placeholder="Search for jobs...">
+            <button onclick="searchJobs()">Search</button>
+            <a href="/login">Logout</a>
+        </div>
+    </header>
+
+    <aside class="filter-sidebar">
+        <h2>Filter by:</h2>
+        <div class="filter-group">
+            <label for="jobType">Job Type:</label>
+            <select id="jobType">
+                <option value="all">All</option>
+                <option value="full-time">Full-Time</option>
+                <option value="part-time">Part-Time</option>
+                <option value="freelance">Freelance</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="location">Location:</label>
+            <select id="location">
+                <option value="all">All</option>
+                <option value="remote">Remote</option>
+                <option value="onsite">On-site</option>
+            </select>
+        </div>
+        <div class="filter-group">
+            <label for="experience">Experience Level:</label>
+            <select id="experience">
+                <option value="all">All</option>
+                <option value="junior">Junior</option>
+                <option value="mid">Mid-Level</option>
+                <option value="senior">Senior</option>
+            </select>
+        </div>
+        <button class="filter-btn" onclick="filterJobs()">Apply Filters</button>
+    </aside>
+
+    <main>
+        <section id="jobListings">
+            <h2>Available Jobs</h2>
+
+            <div class="job-card">
+                <h3>Software Developer</h3>
+                <p><strong>Location:</strong> Remote</p>
+                <p><strong>Type:</strong> Full-Time</p>
+                <p><strong>Experience:</strong> Mid-Level</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Data Analyst</h3>
+                <p><strong>Location:</strong> On-site</p>
+                <p><strong>Type:</strong> Part-Time</p>
+                <p><strong>Experience:</strong> Junior</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <h3>UI/UX Designer</h3>
+                <p><strong>Location:</strong> Remote</p>
+                <p><strong>Type:</strong> Freelance</p>
+                <p><strong>Experience:</strong> Senior</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <h3>Project Manager</h3>
+                <p><strong>Location:</strong> On-site</p>
+                <p><strong>Type:</strong> Full-Time</p>
+                <p><strong>Experience:</strong> Senior</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+
+            <div class="job-card">
+                <h3>QA Tester</h3>
+                <p><strong>Location:</strong> Remote</p>
+                <p><strong>Type:</strong> Part-Time</p>
+                <p><strong>Experience:</strong> Mid-Level</p>
+                <button class="apply-btn">Apply Now</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Job Search Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
