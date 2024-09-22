@@ -1,11 +1,14 @@
-package com.jobportal.Job.Project.dto;
+package com.jobportal.Job.dto;
+
+import java.time.LocalDate;
 
 public class RegisterRequest {
     private String firstName;
     private String lastName;
     private String email;
     private String password;
-
+    private LocalDate dob;
+    private String phoneNumber;
 
     public String getFirstName() {
         return firstName;
@@ -37,5 +40,21 @@ public class RegisterRequest {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+
+    public LocalDate getDob() {
+        return dob;
+    }
+
+    public void setDob(LocalDate dob) {
+        this.dob = dob;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }

@@ -1,4 +1,4 @@
-package com.jobportal.Job.Project.Controller;
+package com.jobportal.Job.Controller;
 
 import java.util.Arrays;
 import java.util.List;
@@ -20,8 +20,9 @@ public class HelloController {
         );
 
         model.addAttribute("OurCourses", ourCourses);
-        return "home"; 
+        return "home";
     }
+
     @GetMapping("/home")
     public String showHomePage(Model model) {
         return home(model);

@@ -1,11 +1,10 @@
-package com.jobportal.Job.Project.dto;
-
+package com.jobportal.Job.dto;
 
 public class LoginRequest {
-
     private String email;
     private String password;
 
+  
     public String getEmail() {
         return email;
     }
